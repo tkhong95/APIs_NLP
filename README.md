@@ -45,8 +45,8 @@ If you aren't familiar with [reddit](https://www.reddit.com/), go check it out a
 
 - Code and executive summary must be in a clearly commented Jupyter Notebook.
 - You must submit your slide deck.
-- Materials must be submitted by **9:00 AM EST on Monday, September 18, 2023**.
-- Presentation must be ready by **09:00 AM EST on Monday, September 18, 2023**.
+- Materials must be submitted by **9:00 AM EST on Monday, September 25, 2023**.
+- Presentation must be ready by **09:00 AM EST on Monday, September 25, 2023**.
 
 ---
 
