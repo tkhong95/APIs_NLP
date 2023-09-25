@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-Chat GPT (Chat Generative Pre-trained Transformer) was released in November 2023. Chat GPT is being used for translation, conversational AI,  coding, and education ([source](https://research.aimultiple.com/chatgpt-use-cases/#textual-applications)). Chat GPT seems to be useful. As a data scientist, we wish to explore the difference between ChatGPT’s response and humans' response. To be able to do that we need a model that can recognize whether the text is AI response or human response. The purpose of this project is to build a classification model by collecting all of the text written by both human and AI on the responses to the same question using Logistic Regression, Naive Bayes, and KNeighborsClassifier model, so that we can train a model to learn how to figure out whether text is human written or ai written.
+Chat GPT (Chat Generative Pre-trained Transformer) was released in November 2022. Chat GPT is being used for translation, conversational AI,  coding, and education ([source](https://research.aimultiple.com/chatgpt-use-cases/#textual-applications)). Chat GPT seems to be useful. As a data scientist, we wish to explore the difference between ChatGPT’s response and humans' response. To be able to do that we need a model that can recognize whether the text is AI response or human response. The purpose of this project is to build a classification model by collecting all of the text written by both human and AI on the responses to the same question using Logistic Regression, Naive Bayes, AdaBoostClassifier and KNeighborsClassifier model, so that we can train a model to learn how to figure out whether text is human written or ai written.
 
 ---
 ## Data Collection
@@ -45,7 +45,7 @@ There are two columns in the dataset:
 
 ## Conclusions and Recommendations
 
-* LogisticRegression gave a higher accuracy score than KNeighborsClassifier, BernoulliNB and MultinomialNB. 
+* LogisticRegression gave a higher accuracy score than KNeighborsClassifier, BernoulliNB MultinomialNB, and AdaBoostClassifier. 
 * KNeighborsClassifier has the lowest accuracy score. Model 3 cannot be used to identify whether the text is human written or ai written.
 * Model 2 has the highest accuracy score and F1 score but model 2 has the difference between test score and train score highest. Model 2 is overfit. 
 * Model 5, model 6 and model 7 were built to improve the overfit and accuracy score of model 2. The accuracy score of those models are lower than model 2 but the difference between train score and test score did improve.
