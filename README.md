@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-Chat GPT (Chat Generative Pre-trained Transformer) was released in November 2023. Chat GPT is being used for translation, conversational AI,  coding, and education ([source]('https://research.aimultiple.com/chatgpt-use-cases/#textual-applications')). Chat GPT seems to be useful. As a data scientist, we wish to explore the difference between ChatGPT’s response and humans' response. To be able to do that we need a model that can recognize whether the text is AI response or human response. The purpose of this project is to build a classification model by collecting all of the text written by both human and AI on the responses to the same question using Logistic Regression, Naive Bayes, and KNeighborsClassifier model, so that we can train a model to learn how to figure out whether text is human written or ai written.
+Chat GPT (Chat Generative Pre-trained Transformer) was released in November 2023. Chat GPT is being used for translation, conversational AI,  coding, and education ([source](https://research.aimultiple.com/chatgpt-use-cases/#textual-applications)). Chat GPT seems to be useful. As a data scientist, we wish to explore the difference between ChatGPT’s response and humans' response. To be able to do that we need a model that can recognize whether the text is AI response or human response. The purpose of this project is to build a classification model by collecting all of the text written by both human and AI on the responses to the same question using Logistic Regression, Naive Bayes, and KNeighborsClassifier model, so that we can train a model to learn how to figure out whether text is human written or ai written.
 
 ---
 ## Data Collection
@@ -30,9 +30,8 @@ There are two columns in the dataset:
 |result|int64|project3_answer|List of 1 and 0, 1 stand for human answer and 0 stand for AI answer| 
 
 ---
-## Conclusions and Recommendations
 
-### Table of Result
+## Table of Result
 
 |Type of Model|Accuracy score|Recall score|Precision score|F1 score|
 |---|---|---|---|---|
@@ -44,12 +43,13 @@ There are two columns in the dataset:
 |Model 6: CountVectorizer and LogisticRegression with Lasso|0.910299|0.926883|0.897069|0.911733|
 |Model 7: AdaBoostClassifier and LogisticRegression|0.910299|0.932792|0.892580|0.912243|
 
-### Result
+## Conclusions and Recommendations
 
 * LogisticRegression gave a higher accuracy score than KNeighborsClassifier, BernoulliNB and MultinomialNB. 
+* KNeighborsClassifier has the lowest accuracy score. Model 3 cannot be used to identify whether the text is human written or ai written.
 * Model 2 has the highest accuracy score and F1 score but model 2 has the difference between test score and train score highest. Model 2 is overfit. 
 * Model 5, model 6 and model 7 were built to improve the overfit and accuracy score of model 2. The accuracy score of those models are lower than model 2 but the difference between train score and test score did improve.
 * Model 1 and 4 also have a good accuracy score. The difference between train score and test score of model 1 and 4 are lower than the difference between train score and test score of model 2. 
-* Even though model 2 is overfit but model 2 is the best and can be used to identify whether the text is human written or ai written.
+* Model 2, model 6 and model 7 can be used to identify whether the text is human written or ai written.
 * In the future, apply different classification and different params to find a higher accuracy score.  
 
